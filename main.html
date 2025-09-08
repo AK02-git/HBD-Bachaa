@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Birthday Site</title>
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+    #bg-audio { display: none; }
+    #content-frame {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Continuous background audio hidden -->
+  <audio id="bg-audio" src="audio1.mp3" autoplay loop></audio>
+
+  <!-- Iframe to load other pages -->
+  <iframe id="content-frame" name="content-frame" src="index.html"></iframe>
+</body>
+</html>
