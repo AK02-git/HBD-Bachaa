@@ -1,0 +1,63 @@
+/* 🎨 Background Gradient */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+  background-size: 800% 800%;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ✨ Text Glow */
+h1, h2, p {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff3399, 0 0 30px #ff66cc;
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: #ff3399;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 51, 153, 0.6);
+  transition: transform 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
+  background: #ff66cc;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.6);
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+
